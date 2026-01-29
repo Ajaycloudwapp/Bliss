@@ -1,0 +1,146 @@
+.navbar-brand img {
+    width: 110px;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 30px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.header_sec .container {
+    max-width: 1450px;
+}
+
+/* Header css here */
+
+
+.custom-navbar .nav-link:hover {
+    color: #3a5548 !important;
+}
+
+.mega-wrapper {
+    position: relative; 
+}
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #3a5548; 
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 32px;
+    z-index: 999;
+    animation: fadeIn 0.25s ease;
+}
+
+
+
+.mega-column h6 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 22px; 
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #5b796a;
+    padding-bottom: 14px;
+    font-family: "Cormorant Garamond", serif !important ;
+}
+
+.mega-column h6 span {
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #fff;
+    color: #000;
+    padding: 4px 6px;
+    border-radius: 50px;
+    margin-left: 11px;
+    font-family: "Inter", sans-serif !important;
+}
+
+.wrapdata{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.mega-column a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    display: list-item;
+    list-style: disc;
+}
+
+.wrapdata a{
+    width: 50%;
+    white-space: break-spaces;
+}
+
+.mega-menu::before { 
+    content: '';
+    position: absolute;
+    top: -14px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #3a5548;
+} 
+
+.mega-column a:hover {
+    color: #fff;
+}
+
+.mega-column{
+    white-space: nowrap;
+}
+
+.mega-column section{
+    padding-left: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header_sec{ 
+    background-color: #f7f7f7;
+}
+
+/* Header section css  */
+
+
+/* Banner Section css start */
+
+.banner_sec{
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 0px; 
+}
+
+
+
+
+
+
