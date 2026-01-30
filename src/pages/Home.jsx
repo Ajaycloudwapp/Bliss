@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <div className='banner_sec'>
                 {/* Banner Section */}
-                <BannerSlider />
+                <BannerSlider /> 
             </div>
         </>
     )
