@@ -14,9 +14,9 @@
     display: none;
 }
 
-.header_sec .container {
+/* .header_sec .container {
     max-width: 1450px;
-}
+} */
 
 /* Header css here */
 
@@ -26,14 +26,14 @@
 }
 
 .mega-wrapper {
-    position: relative; 
+    position: relative;
 }
 
 .mega-menu {
     position: absolute;
     top: 100%;
     right: 0;
-    background: #3a5548; 
+    background: #3a5548;
     border-radius: 16px;
     padding: 24px;
     display: flex;
@@ -48,12 +48,12 @@
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 24px;
-    font-size: 22px; 
+    font-size: 22px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #5b796a;
     padding-bottom: 14px;
-    font-family: "Cormorant Garamond", serif !important ;
+    font-family: "Cormorant Garamond", serif !important;
 }
 
 .mega-column h6 span {
@@ -85,12 +85,12 @@
     list-style: disc;
 }
 
-.wrapdata a{
+.wrapdata a {
     width: 50%;
     white-space: break-spaces;
 }
 
-.mega-menu::before { 
+.mega-menu::before {
     content: '';
     position: absolute;
     top: -14px;
@@ -100,17 +100,17 @@
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     border-bottom: 11px solid #3a5548;
-} 
+}
 
 .mega-column a:hover {
     color: #fff;
 }
 
-.mega-column{
+.mega-column {
     white-space: nowrap;
 }
 
-.mega-column section{
+.mega-column section {
     padding-left: 20px;
 }
 
@@ -126,7 +126,7 @@
     }
 }
 
-.header_sec{ 
+.header_sec {
     background-color: #f7f7f7;
 }
 
@@ -135,14 +135,135 @@
 
 /* Banner Section css start */
 
-.banner_sec{
+.banner_sec {
     width: 100%;
     background-color: #fff;
-    padding: 80px 0px; 
+    padding: 80px 0px;
 }
 
+.banner_inside {
+    width: 100%;
+    background-color: transparent;
+    padding: 0px;
+}
 
+.banner_inside section h6 {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    background: #3a5548bf;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 50px;
+}
 
+.banner_inside section h2 {
+    text-align: left;
+    font-size: 70px;
+    font-weight: 700; 
+    line-height: 70px;
+    margin-bottom: 25px;
+    font-family: "Cormorant Garamond", serif;
+}
 
+.banner_inside section h2 span {
+    color: #3a5548;
+    font-weight: bolder;
+    margin-top: 7px;
+}
 
+.banner_inside section p {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 
+.banner_inside section button {
+    margin-top: 36px;
+    background: #3a5548; 
+    border: none !important;
+    outline: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.banner_picture {
+    position: relative;
+}
+ 
+.banner_picture img { 
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.floating-wrapper {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Soft animated background shape */
+.blob-layer {
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    background: radial-gradient(circle at 30% 30%, #e8f7e8, #cfeccc);
+    border-radius: 50% 60% 55% 65%;
+    animation: blobFloat 10s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Product floating + slight rotation */
+.floating-image {
+    width: 260px;
+    position: relative;
+    z-index: 2;
+    animation: productFloat 5s ease-in-out infinite;
+}
+
+/* Product animation */
+@keyframes productFloat {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(1.5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Background blob animation */
+@keyframes blobFloat {
+    0% {
+        transform: scale(1) translate(0, 0);
+        border-radius: 50% 60% 55% 65%;
+    }
+
+    50% {
+        transform: scale(1.1) translate(12px, -10px);
+        border-radius: 60% 50% 65% 55%;
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+        border-radius: 50% 60% 55% 65%;
+    }
+}
