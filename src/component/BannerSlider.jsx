@@ -8,7 +8,7 @@ const BannerSlider = () => {
             <div className='banner_inside'>
                 <Container>
                     dd
-                </Container>
+                </Container> 
             </div> 
         </>
     )
