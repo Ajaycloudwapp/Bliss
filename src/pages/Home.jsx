@@ -1,6 +1,7 @@
 
 import React from 'react'
 import BannerSlider from '../component/BannerSlider'
+import { WhatWeOffer } from '../component/WhatWeOffer'
 
 const Home = () => {
     return (
@@ -9,6 +10,12 @@ const Home = () => {
                 {/* Banner Section */}
                 <BannerSlider /> 
             </div>
+
+             <div className='what_we_offer_sec'>
+                {/* WhatWeOffer Section */}
+                <WhatWeOffer /> 
+            </div>
+
         </>
     )
 }
