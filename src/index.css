@@ -2,90 +2,64 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: "GothamMedium";
+    src: url("/fonts/GothamMedium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  /* font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif;
   font-family: "Inter", sans-serif; */
-  font-family: "Libre Franklin", sans-serif !important;
+    /* font-family: "Libre Franklin", sans-serif !important; */
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
 
 .what_we_offer_sec {
-  width: 100%;
-  padding: 80px 0px;
-  background-color: #fdf4e5;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #fff;
 }
 
 .page_heading {
-  text-align: center;
-  font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .page_heading h6 {
-  color: #7F6C53;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Libre Franklin", sans-serif;
+    color: #01458e;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 .page_heading h3 {
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #2b2620;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #2b2620; 
 }
 
 
-/* What We Offer - Service Card CSS */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
 
-.service-card {
-  display: flex;
-  background: #fff;
-  border-radius: 30px;
-  overflow: hidden;
-  height: 100%;
-  border: 1px solid #e1e1e1d1;
-}
+    .practiceSession_sec .nav-tabs .nav-link{padding: 15px 20px !important; width: 100% !important; font-size: 15px !important;}
+    .pulseReading_sec .skypeCard .page_heading h3{
+        margin-bottom: 15px;
+    }
+    .pulseReading_sec .aboutus_inside p{
+        line-height: 27px;
+    }
+    .vataPics{margin-top: 10px !important; border-radius: 5px !important; margin-bottom: 20px !important;}
+    .services_card h4{font-size: 18px !important;} 
+    .services_card p{font-size: 14px !important;} 
+    .page_heading h3{font-size: 40px !important;}
 
-.service-image {
-  width: 45%;
-}
+    .video_outer .pageBanner_overlay, .pulseReading_sec .pageBanner_sec{min-height: auto !important; padding: 50px 0px !important;}
+    .aboutus_inside p{line-height: 26px !important;}
+ 
 
-.service-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  border-top-right-radius: 110px;
-}
-
-.service-content {
-  padding: 35px;
-  width: 55%;
-}
-
-.service-content .icon {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.service-content h3 {
-  font-size: 35px;
-  font-weight: 800;
-  margin-bottom: 12px;
-  font-family: 'Cormorant Garamond';
-}
-
-.service-content p {
-  color: #606060;
-  font-size: 15px;
-  margin-bottom: 20px;
-  font-family: 'Libre Franklin';
-}
-
-.service-content a {
-  color: #2f6f4e;
-  font-weight: 600;
-  text-decoration: none;
-  font-family: "Inter";
 }
