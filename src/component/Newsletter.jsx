@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Button, Col, Container, Row } from 'react-bootstrap'
 
+import NewsImg from "/image/newsletter.svg"
+
 const Newsletter = () => {
 
     const [checked, setChecked] = useState(false); 
@@ -9,7 +11,7 @@ const Newsletter = () => {
     return (
         <>
             <section>
-                <Row className='justify-content-center'>
+                <Row>
                     <Col md={6}>
                         <section className="page_heading centerText">
                             <h3> <span> <strong> Stay up </strong> to date </span> </h3>
@@ -20,16 +22,10 @@ const Newsletter = () => {
                                 <input type='text' className='form-control' placeholder='Email' />
                                 <Button> Subscribe </Button>
                             </div>
-                            <div className="customCheckbox">
-                                <input
-                                    type="checkbox"
-                                    id="html"
-                                    checked={checked}
-                                    onChange={() => setChecked(!checked)}
-                                />
-                                <label htmlFor="html"> By proceeding ahead, I agree and accept Forest Essentials privacy policy and terms. </label>
-                            </div>
                         </div>
+                    </Col>
+                    <Col>
+                        <img src={NewsImg} alt="" />
                     </Col>
                 </Row>
             </section>

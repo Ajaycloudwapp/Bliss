@@ -75,10 +75,10 @@ const Header = () => {
                                                     Our Profile <span> About Us </span>
                                                 </h6>
                                                 <section>
-                                                    <Link to="/aboutus">About Us</Link>
-                                                    <a href="#">Our Team</a>
-                                                    <a href="#">Quality Control</a>
-                                                    <a href="#">Testimonials</a>
+                                                    <Link to="/aboutus">About Us</Link> 
+                                                    <Link to="/our-teams">Our Team</Link> 
+                                                    <Link to="/quality-control">Quality Control</Link>
+                                                    <Link to="/testimonials">Testimonials</Link>
                                                 </section>
                                             </div>
                                         </div>
@@ -104,9 +104,9 @@ const Header = () => {
                                                     Our Products <span> Bliss Ayurveda's Products </span>
                                                 </h6>
                                                 <section>
-                                                    <a href="#">Browse By Gallery</a>
-                                                    <a href="#">Order Products</a>
-                                                    <a href="#">Online Consultation</a>
+                                                    <Link to="/browse-gallery">Browse By Gallery</Link>
+                                                    <Link to="/order-products">Order Products</Link>
+                                                    <Link to="/online-consultation">Online Consultation</Link>
                                                 </section>
                                             </div>
                                         </div>
@@ -135,12 +135,12 @@ const Header = () => {
                                                 <section className="wrapdata">
                                                     <a href="#">Bliss Ayurveda Health Village</a>
                                                     <a href="#">Our Facilities</a>
-                                                    <a href="#">Panchkarma</a>
-                                                    <a href="#">Wellness Programs</a>
-                                                    <a href="#">Skin SPA Treatments</a>
-                                                    <a href="#">Yoga Classes</a>
-                                                    <a href="#">Physiotherapy</a>
-                                                    <a href="#">In-Residence Tariff</a>
+                                                    <Link to="/panchkarma">Panchkarma</Link>
+                                                    <Link to="/wellness-programs">Wellness Programs</Link> 
+                                                    <Link to="/laser-treatments">Skin SPA Treatments</Link>
+                                                    <Link to="/yoga-classes">Yoga Classes</Link>
+                                                    <Link to="/physiotherapy">Physiotherapy</Link>
+                                                    <Link to="/residence-tariff">In-Residence Tariff</Link>
                                                     <a href="#">Ayurveda Wellness Retreat</a>
                                                 </section>
                                             </div>
@@ -169,11 +169,11 @@ const Header = () => {
                                                 </h6>
                                                 <section className="wrapdata">
                                                     <Link to="/ayurveda-courses">Ayurveda Courses</Link>
-                                                    <a href="#">Basics of Ayurveda</a>
+                                                    <Link to="/basic-ayurveda">Basics of Ayurveda</Link>
                                                     <Link to="/pulse-reading">Pulse Reading</Link>
                                                     <Link to="/glossary-herbs">Glossary of Herbs</Link> 
                                                 </section>
-                                            </div>
+                                            </div> 
                                         </div>
                                     )}
                                 </div>
@@ -198,7 +198,7 @@ const Header = () => {
                                                 </h6>
                                                 <section>
                                                     <Link to="/video-gallery">Bliss Ayurveda Video Gallery</Link>
-                                                    <a href="#">Blog</a>
+                                                    <Link to="/blogs">Blog</Link>
                                                 </section>
                                             </div>
                                         </div>

@@ -604,6 +604,7 @@
     overflow: hidden;
     position: relative;
     border: 1px solid #eaeaea;
+    margin: 13px 0px;
 }
 
 .product_header {
@@ -813,7 +814,7 @@
 
 .testimonials_sec {
     width: 100%;
-    padding: 70px 0px;
+    padding: 0px 0px 70px;
     background: linear-gradient(180deg, transparent, transparent);
 }
 
@@ -821,42 +822,96 @@
     margin-top: 35px;
 }
 
+/* .testimonials_sec .page_heading h3 {
+    font-size: 47px;
+    line-height: normal;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.testimonials_sec .page_heading h3 strong {
+    font-size: 32px;
+    font-weight: 400;
+    color: #383535;
+}
+
+.testimonials_sec p.bigpara {
+    font-family: "Libre Franklin", sans-serif; 
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 30px;
+} */
+ 
 .testimonial_inside section img.ClientPic {
-    width: 135px;
-    height: 135px;
+    width: 70px;
+    height: 70px;
     display: block;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid #01458e;
-    padding: 8px;
     object-fit: cover;
+    margin-right: 25px;
+    border: 2px solid #01458e;
+    padding: 3px;
 }
 
 .testimonial_inside section p {
-    text-align: center;
-    margin-top: 25px;
-    line-height: 28px;
+    text-align: left;
+    margin-top: 0;
+    line-height: 35px;
     font-weight: 400;
     color: #444;
     position: relative;
-    margin-left: 10px;
+    font-size: 20px;
+        display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .testimonial_inside section h5 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 700;
     font-family: "Cormorant Garamond", serif;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial_inside section h5 strong{
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+.testimonial_inside section {
+    margin-top: 35px;
+    background: #f5f5f5a8;
+    padding: 60px 30px 40px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    position: relative;
+}
+
+.testimonial_inside section .leftSVG {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 30px;
+    color: #01458e;
 }
 
 .testimonial_inside section h5 span {
     display: block;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 5px;
+    line-height: 20px;
 }
 
 .leftSVG {
@@ -918,6 +973,17 @@
     width: 100%;
     background: linear-gradient(0deg, #fbf9f9, #f4f4f4);
     padding: 70px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter_sec img{
+    position: absolute;
+    right: 170px;
+    top: -5px;
+    bottom: 0;
+    width: 31%;
+    opacity: 0.5;
 }
 
 .newsletter_sec section p {
@@ -930,20 +996,36 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
+.newsletter_sec .centerText h3 {
+    text-align: left;
+    font-size: 37px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.newsletter_sec section p{
+    text-align: left;
+}
+
 .newsletter_form {
-    width: 100%;
+    width: 81%;
     background: none;
-    padding: 20px 30px;
+    padding: 20px 0px;
 }
 
 .inputOuterField {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .inputOuterField input {
     height: auto;
     background: transparent !important;
-    border: 1px solid #000 !important;
+    border: 1px solid #01458e !important;
     padding: 12px 25px;
     border-radius: 50px;
     font-weight: 500;
@@ -956,9 +1038,9 @@
 
 .inputOuterField button {
     position: absolute;
-    right: 0px;
-    top: 0px;
-    padding: 13px 30px;
+    right: 4px;
+    top: 3px;
+    padding: 10px 25px;
     border-radius: 50px;
     font-size: 16px;
     font-weight: 600;
@@ -1025,7 +1107,7 @@
     width: 100%;
     background: #fff;
     padding: 60px 0px 20px;
-    border-top: 1px solid #e8e8e8; 
+    border-top: 1px solid #e8e8e8;
 }
 
 .footer_linksInside {
@@ -1169,7 +1251,7 @@
 
 .pageBanner_overlay {
     background: rgba(0, 0, 0, 0.4);
-    /* optional dark overlay */ 
+    /* optional dark overlay */
     padding: 35px 0;
 }
 
@@ -1681,34 +1763,759 @@
 .vataPics {
     width: 520px;
     border: 1px solid #e3e3e3;
-    margin-top: 15px;  
+    margin-top: 15px;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
-.textHindi{
-    font-size: 35px !important;  
+.textHindi {
+    font-size: 35px !important;
     line-height: normal;
 }
 
-.glossary_inside{
-    margin-top: 45px; 
+.glossary_inside {
+    margin-top: 45px;
 }
 
-.glossaryDetail .skypeCard{ 
+.glossaryDetail .skypeCard {
     margin-top: 0px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
- 
-.glossaryDetail .aboutus_inside ul{
+
+.glossaryDetail .aboutus_inside ul {
     margin-bottom: 25px;
 }
 
-.glossaryDetail .width100 li{ 
+.glossaryDetail .width100 li {
     width: 100%;
 }
 
-.glossaryDetail .about_pics img{
+.glossaryDetail .about_pics img {
     height: 380px;
     object-fit: cover;
 }
+
+.ourExpertise_sec .page_heading h6 {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.ourExpertise_sec .page_heading h3 {
+    font-size: 30px;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.ourExpertise_sec .skypeCard {
+    background: #ffffff;
+    border: 1px solid #ececec;
+}
+
+.ourExpertise_sec p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    /* after 8 line show ... */
+    -webkit-box-orient: vertical;
+}
+
+.ourExpertise_sec .skypeCard:first-child {
+    margin-top: 0px !important;
+}
+
+.aboutPage .about_pics img {
+    border-radius: 20px;
+    max-width: 535px;
+}
+
+/* Teams Section css */
+
+.teams_details {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0px;
+}
+
+.teams_details ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.teams_details li {
+    border-left: 4px solid #03458d2e;
+    padding: 0 20px;
+    padding-left: 15px;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+.teams_details li strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.tagline {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #555;
+}
+
+.teamsMembers {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.teams_inside {
+    width: 100%;
+    background-color: transparent;
+}
+
+.teams_inside .product_title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px;
+    position: relative;
+    background: transparent;
+    color: #000;
+    transition: none;
+}
+
+.teams_inside .products_card:hover img {
+    transform: scale(1);
+}
+
+.teams_inside .products_card:hover .product_title {
+    bottom: 0;
+}
+
+.teams_inside p.product_subtitle {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.teams_inside section {
+    padding: 10px 15px;
+}
+
+.teams_inside .products_card {
+    border: none;
+}
+
+.teams_slidersec {
+    width: 100%;
+    background: #fbf9f9;
+    padding: 70px 0px;
+}
+
+.testimonial_page .page_heading h3 {
+    font-size: 15px;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: 400;
+}
+
+.testimonial_page .skypeCard{
+    background: #ffffff;
+}
+
+.testimonial_page .page_heading h3 strong {
+    font-family: "Cormorant Garamond", serif;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial_page .skypeCard p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+}
+
+.testimo_para {
+    width: 100%;
+    position: relative;
+    padding-left: 45px;
+    padding-top: 15px;
+}
+
+.testimo_para svg.firstSVG {
+    position: absolute;
+    font-size: 35px;
+    top: 0;
+    left: 0;
+}
+
+.testimo_para svg.secondSVG {
+    font-size: 35px;
+}
+
+.gallery_inside {
+    margin-top: 45px;
+}
+
+.blogs_inside {
+    margin-top: 45px;
+}
+
+.blogs_page .product_body h4 {
+    font-size: 21px;
+    color: #01458e;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blogs_page .product_header img {
+    height: 350px;
+}
+
+.blogs_page .desc2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* 👈 show only 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    /* 2 lines × line-height */
+}
+
+
+.pagination_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pagination_btn {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.pagination_btn:hover {
+    background: #01458e;
+    color: #fff;
+}
+
+.pagination_btn.active {
+    background: #01458e;
+    color: #fff;
+    border-color: #01458e;
+}
+
+.pagination_btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.shimmer-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #f3f3f3;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.shimmer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            #f3f3f3 25%,
+            #e6e6e6 37%,
+            #f3f3f3 63%);
+    animation: shimmer 1.4s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -400px 0;
+    }
+
+    100% {
+        background-position: 400px 0;
+    }
+}
+
+.fade-in {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.basicAyurveda_page .aboutus_sec p{
+    text-align: left;
+    font-size: 16px; 
+    color: #333; 
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.basicAyurveda_page .mypara{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.threebook_sec {
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 30px; 
+    margin-top: 35px;
+}
+
+.threebook_sec h2{
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+    color: #444;
+} 
+
+.threebook_sec section{
+    margin-top: 25px;
+}
+
+.threebook_sec section h4{
+    font-size: 20px;
+    text-transform: uppercase; 
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.quality_page .mypara{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.quality_page .product_header img {
+    height: 430px;
+    object-fit: contain;     
+}
+
+.quality_page .product_body{
+    padding: 25px 20px 40px; 
+}
+
+.gallery_page .product_header img{
+    object-fit: contain; 
+    background: #fff; 
+}
+
+.order_products .pageBanner_sec {
+    width: 100%;
+    min-height: 450px;
+}
+
+.order_products .pageBanner_overlay{
+    display: none;
+}
+
+.residenceTariff_page .aboutus_inside li {
+    padding-right: 30px;
+    font-size: 15px;
+} 
+
+.residenceTariff_page .practiceTabs h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Cormorant Garamond", serif; 
+    margin-bottom: 20px;
+}
+
+.residenceTariff_page .table-responsive h4 {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.residenceTariff_page .course_content button {
+    margin-top: 10px;
+    background: #01458e;
+    border: none !important;
+    outline: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.bookAppointment_page .page_heading h6 {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.bookAppointment_page .page_heading h3 {
+    text-align: left;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+.bookAppointment_page .businessEnquiry_sec p {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.bookAppointment_page .contact_content{
+    padding-left: 0px;
+}
+
+.physiotherapy_inside{
+    margin-top: 35px;
+}
+
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #01458e !important;
+}
+
+.mypara h2 {
+    margin-bottom: 25px;
+    font-size: 17px;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.mypara h2:first-child svg{
+    font-size: 25px;
+} 
+
+.mypara h2 svg{
+    font-size: 30px;
+}
+
+.mypara h2 strong{ 
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.order_products .contact_content .page_heading h6 {
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.order_products .contact_content .page_heading h3 {
+    font-size: 35px;
+    line-height: normal;
+    text-align: left;
+    line-height: 55px;
+    margin-bottom: 15px;
+}
+
+.order_products .contact_content .page_heading h3  strong{
+    font-size: 35px;
+}
+
+/* Oreder Product Page css */
+
+.orderaccordian_sec{
+    width: 100%;
+    background: #fbf9f9; 
+    padding: 70px 0px; 
+}
+
+.accordian_inside{
+    margin-top: 55px;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none !important;
+    outline: none !important; 
+}
+
+.accordion-item {
+    margin: 15px 0px;
+    border: none !important;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}  
+
+.accordion-item strong {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #023a76;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    padding: 20px 25px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left; 
+    border-radius: 5px !important;
+    background-color: #01458e;
+    padding-left: 65px;
+}
+
+.accordion-button:not(.collapsed){
+    color: #ffffff;
+    background-color: #01458e; 
+}
+
+.accordion-button::after{
+    filter: invert(1);
+}
+
+.physiotherapy_page .skypeCard {
+    background: #f7f7f7;
+} 
+
+.physiotherapy_card{
+    background-color: transparent;
+    width: 100%;
+}
+
+.physiotherapy_card h3 {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.physiotherapy_card p{
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.yoga_slider{
+    margin-top: 40px;
+}
+
+.slider2 img {
+    height: 470px;
+    width: 100%; 
+    object-fit: cover;
+}
+
+.laser_sec{
+    margin-top: 45px;
+}
+
+.laser_sec p{
+    text-align: left;
+    font-size: 17px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+main{
+    min-height: calc(100vh - 642px); 
+}
+
+.wellness_page .ourprocess_sec{
+    background-color: #fbf9f9;
+}
+
+.wellness_page .ourprocess_sec .product_header img{
+    height: auto;
+}
+
+.wellness_page .blogs_inside {
+    margin-top: 0px;
+}
+
+.wellness_page .product_body h6 {
+    color: #01458e;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.wellness_page .ourExpertise_sec{
+    padding: 40px 0px;
+}
+
+.wellness_page .ourExpertise_sec .skypeCard{
+    border: none;
+    background-color: transparent;
+    padding: 25px 30px;
+    margin-top: 0px; 
+}
+
+.wellness_page .ourExpertise_sec .col-md-8{
+    padding: 0 40px;
+}
+
+.leftSidePic{
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+
+.rightSidePic{
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.wellness_page .about_pics img{
+    height: 370px;
+    object-fit: cover;
+}
+
+.wellness_page .physiotherapy_inside .page_heading h3 {
+    font-size: 30px;
+}
+
+/* Panchkarma Page css */
+
+.panchkarma_page .skypeCard .page_heading h3{
+    line-height: 44px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+
+.practiceSession_sec .nav-tabs .nav-link{padding: 15px 20px !important; width: 100% !important; font-size: 15px !important;}
+.pulseReading_sec .skypeCard .page_heading h3{
+    margin-bottom: 15px;
+}
+.pulseReading_sec .aboutus_inside p{
+    line-height: 27px;
+}
+.vataPics{margin-top: 10px !important; border-radius: 5px !important; margin-bottom: 20px !important;}
+.services_card h4{font-size: 17px !important;} 
+.services_card p{font-size: 13px !important; line-height: 25px;}  
+.page_heading h3{font-size: 36px !important; line-height: 40px;}
+
+.video_outer .pageBanner_overlay, .pulseReading_sec .pageBanner_sec{min-height: auto !important; padding: 50px 0px !important;}
+.aboutus_inside p{line-height: 26px !important;}
+.product_header img{height: 220px;} 
+
+
+/* Add new css */
+
+.navbar-brand img{width: 110px;}
+.upper_navbar{padding: 5px 0px;}
+.navbar-nav .nav-link{margin: 0px 10px;}
+.mega-column h6{font-size: 20px;}
+.mega-column a{margin-bottom: 5px; font-size: 14px;}
+
+.navbar-collapse{padding: 0px;}
+.banner-slide{min-height: 540px !important;} 
+.banner_inside section h2{font-size: 65px;}
+.banner_inside section button{font-size: 15px;}
+.circle_img{margin-bottom: 0px;}
+
+.services_sec{padding: 55px 0px;}
+.aboutus_sec{padding: 55px 0px;}
+.aboutus_inside .page_heading h3{line-height: 45px;}
+
+.featured_prod_sec{padding: 55px 0px;}
+.product_body{padding: 25px 20px 30px;}
+.product_body h4 {font-size: 17px; margin-bottom: 7px;}
+.blissAyurveda_prod_sec{padding: 55px 0px;}
+
+.newsletter_sec{padding: 55px 0px;}
+.pageBanner_overlay h1{font-size: 45px;}
+.ourExpertise_sec p{-webkit-line-clamp: 5;}
+.quality_page .product_header img{height: auto;}
+.testimonial_page .page_heading h3{font-size: 15px !important;}
+
+.contact_content h3 strong{font-size: 40px;} 
+.contact_content h3{font-size: 23px;}
+.contact_content li{font-weight: 500;}
+ 
+
+}
+

@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import BannerSlider from '../component/BannerSlider'
@@ -137,12 +137,12 @@ const Home = () => {
             <div className='testimonials_sec'>
                 <Container>
                     <section className="page_heading centerText">
-                        <h6> What our customers are saying about our product's </h6>
-                        <h3> <span> Client’s <strong> Testimonials </strong> </span> </h3>
+                        <h6>  What our customers are saying about our product's  </h6>
+                        <h3> <span>  Client’s  <strong>  Testimonials  </strong> </span> </h3>
                     </section>
 
                     {/* Services Section */}
-                    <ClientTestimonial />
+                    <ClientTestimonial page="home" />
 
                 </Container>
             </div>

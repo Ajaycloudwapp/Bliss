@@ -13,6 +13,7 @@ const ExpertSection = () => {
                         </div>
 
                         <div className="expert_content_box">
+                            <h6> Our Vision </h6>
                             <h3>Applying the Ancient knowledge of Ayurveda in a modern context</h3>
                             <p>
                                 Applying the Ancient knowledge of Ayurveda in a modern context & conveying its potent healing potential to improve the quality of health & life of an individual and society in general. Bliss Ayurveda with an international presence demonstrates stability, growth, and ample industry experience. Bliss Ayurveda products are available and sold in India, USA, Russia, Italy, Norway, Germany, San Marino, Vatican City, Denmark, Azerbaijan, Spain, Croatia, Austria, Switzerland, Slovenia, Ukraine, Latvia, Kazakhstan, Canada, Cyprus, Greece and Papua New Guinea. As a good company, we offer excellent training, seminars, incentives, and support to our distributors.
