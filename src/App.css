@@ -503,7 +503,7 @@
 .aboutus_sec {
     width: 100%;
     background: #fbf9f9;
-    padding: 80px 0px;
+    padding: 60px 0px;
 }
 
 .about_pics {
@@ -1957,7 +1957,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 4;
     margin-bottom: 20px;
     -webkit-box-orient: vertical;
 }
@@ -2456,11 +2456,28 @@ main{
 }
 
 
+.panchkarma_page .skypeCard{
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+}
 
+.ourExpertise_sec .skypeCard{
+    padding: 20px 30px;
+}
 
+.panchkarma_page .skypeCard .col-md-8{
+    padding: 0 40px; 
+}
 
+.panchkarma_page .ourExpertise_sec{
+    padding: 40px 0px;
+}
 
-
+.panchkarma_page .about_pics img {
+    height: 350px;
+    object-fit: cover; 
+}
 
 
 
@@ -2515,6 +2532,7 @@ main{
 .contact_content h3 strong{font-size: 40px;} 
 .contact_content h3{font-size: 23px;}
 .contact_content li{font-weight: 500;}
+
  
 
 }

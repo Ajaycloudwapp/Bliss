@@ -78,6 +78,8 @@ function App() {
                     <Route path='/glossary-herbs' element={<GlossaryHerbs />} />
                     <Route path="/glossary-detail/:id" element={<GlossaryDetail />} />
                 </Routes>
+ 
+
                 <Footer />
             </Router>
         </>
