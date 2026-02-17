@@ -535,7 +535,7 @@
 }
 
 .aboutus_inside p {
-    text-align: left;
+    text-align: justify;
     font-size: 16px;
     color: #333;
     font-weight: 400;
@@ -2478,6 +2478,60 @@ main{
     height: 350px;
     object-fit: cover; 
 }
+
+.panchkarma_page .testimonials_sec{
+    padding-top: 70px;
+}
+
+.testimonial_inside section h6 img{
+    width: 110px;
+}
+
+.panchkarma_page .testimonial_inside section img.ClientPic{ 
+    margin-right: 15px;
+}
+
+.panchkarma_page .testimonial_inside section h5 strong {
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+    padding-right: 30px;
+    line-height: 22px;
+}
+
+.panchkarma_page .testimonial_inside section h6 {
+    margin-bottom: 20px;
+}
+
+.panchkarma_page .testimonial_inside section p{
+    line-height: 25px;
+    -webkit-line-clamp: 2; 
+    font-size: 16px;
+    min-height: 50px;
+}
+
+.panchkarma_page .testimonial_inside section .leftSVG{
+    font-size: 25px;
+}
+
+.healthVillage_sec .pageBanner_overlay{
+    padding: 165px 0; 
+}
+
+.healthVillage_sec .page_heading{
+    max-width: 790px;
+    margin: auto;
+}
+
+.healthVillage_sec .ourprocess_sec{
+    background-color: #fbf9f9; 
+}
+
+
+
+
 
 
 

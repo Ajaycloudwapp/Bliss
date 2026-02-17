@@ -35,6 +35,7 @@ import YogaClasses from './pages/YogaClasses';
 import LaserTreatments from './pages/LaserTreatments';
 import WellnessPrograms from './pages/WellnessPrograms';
 import Panchkarma from './pages/Panchkarma';
+import HealthVillage from './pages/HealthVillage';
 
 
 
@@ -43,7 +44,7 @@ function App() {
         <>
             {/* <Router> */}
             <Router basename="/AC/react/bliss-ayurveda/">
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <Header />
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -64,6 +65,7 @@ function App() {
                     <Route path='/video-gallery' element={<VideoGallery />} />
                     <Route path='/blogs' element={<Blogs />} />
                     
+                    <Route path='/health-village' element={<HealthVillage />} />
                     <Route path='/panchkarma' element={<Panchkarma />} />
                     <Route path='/wellness-programs' element={<WellnessPrograms />} />
                     <Route path='/laser-treatments' element={<LaserTreatments />} />

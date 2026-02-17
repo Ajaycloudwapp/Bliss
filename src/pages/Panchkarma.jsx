@@ -4,16 +4,18 @@ import PageBanner from '../component/PageBanner'
 import AboutBanner from "/image/banner1.avif";
 import { Container, Table } from 'react-bootstrap';
 
-import Panchkarma1 from "/image/panchkarma/panchkarma_1.jpg"  
-import Panchkarma2 from "/image/panchkarma/panchkarma_2.webp"  
-import Panchkarma3 from "/image/panchkarma/panchkarma_3.jpg"  
-import Panchkarma4 from "/image/panchkarma/panchkarma_4.jpg"  
-import Panchkarma5 from "/image/panchkarma/panchkarma_5.jpg"  
-import Panchkarma6 from "/image/panchkarma/panchkarma_6.jpg"  
-import Panchkarma7 from "/image/panchkarma/panchkarma_7.png"  
-import Panchkarma8 from "/image/panchkarma/panchkarma_8.jpg"  
-import Panchkarma9 from "/image/panchkarma/panchkarma_9.jpg"  
-import Panchkarma10 from "/image/panchkarma/panchkarma_10.jpg"  
+import Panchkarma1 from "/image/panchkarma/panchkarma_1.jpg"
+import Panchkarma2 from "/image/panchkarma/panchkarma_2.webp"
+import Panchkarma3 from "/image/panchkarma/panchkarma_3.jpg"
+import Panchkarma4 from "/image/panchkarma/panchkarma_4.jpg"
+import Panchkarma5 from "/image/panchkarma/panchkarma_5.jpg"
+import Panchkarma6 from "/image/panchkarma/panchkarma_6.jpg"
+import Panchkarma7 from "/image/panchkarma/panchkarma_7.png"
+import Panchkarma8 from "/image/panchkarma/panchkarma_8.jpg"
+import Panchkarma9 from "/image/panchkarma/panchkarma_9.jpg"
+import Panchkarma10 from "/image/panchkarma/panchkarma_10.jpg"
+
+import ClientReviews from '../component/ClientReviews';
 
 const Panchkarma = () => {
     return (
@@ -92,7 +94,7 @@ const Panchkarma = () => {
                         <section class="skypeCard">
                             <div class="align-items-center row">
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card rightSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma1} />
                                     </div>
                                 </div>
@@ -117,7 +119,7 @@ const Panchkarma = () => {
                                     <p> Herbalized Steam treatment of the whole body with the natural aroma of herbs opens up the clogged channels at all levels and removes mala (toxic materials with sweat) from the body. Sarwang Swedan is a process used to remove the various harmful substances left behind by illness, inadequate nutrition, and natural toxins. The body typically possesses the innate ability to effectively digest and eliminate these waste products, including the vitiated doshas. As per requirement, vaidya decide to suggest Local Swedana (Ekanga Sweda) or Full body Swedana (Sarvanga Sweda). Acharya Sushruta and Acharya Vagbhata have explained 4 types of swedana Tapa Sweda, Upanaha Sweda, Ushma Sweda and Drava Sweda. Valuka Swed, Patra Pottali Swed, Shashtik Shaali Pind Swed and Nadi Swed are a few examples of Swedana. </p>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card leftSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma2} />
                                     </div>
                                 </div>
@@ -126,7 +128,7 @@ const Panchkarma = () => {
                         <section class="skypeCard">
                             <div class="align-items-center row">
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card rightSidePic">
+                                    <div class="about_pics shine-card">
                                         <img src={Panchkarma3} />
                                     </div>
                                 </div>
@@ -136,7 +138,7 @@ const Panchkarma = () => {
                                         <h3><strong> Shirodhara </strong></h3>
                                     </section>
                                     <p> Shirodhara is a traditional deep relaxation technique by pouring 2-3 litres of herbalized oil in the form of a continuous stream, on the forehead in a rhythmic manner which pacifies and revitalizes the Mind and Body. It has an intense rejuvenating and anti-ageing, effect normalizes sleep patterns, improves memory and is so relaxing that you sleep or transcend within 5-10 minutes on the treatment table itself. </p>
-                                    <p> Benefits: Enhances memory & concentration, promotes mental clarity, normalizes sleep patterns and rejuvenates the whole body. Also helpful in disorders like Anxiety, Insomnia, Overactive mind, Restlessness, Psychosomatic problems, Neurological disorders, Headaches and Hair problems. </p> 
+                                    <p> Benefits: Enhances memory & concentration, promotes mental clarity, normalizes sleep patterns and rejuvenates the whole body. Also helpful in disorders like Anxiety, Insomnia, Overactive mind, Restlessness, Psychosomatic problems, Neurological disorders, Headaches and Hair problems. </p>
                                 </div>
                             </div>
                         </section>
@@ -151,7 +153,7 @@ const Panchkarma = () => {
                                     <p> Benefits: Nourishes body tissues, Lubricates joints, enhances flexibility in the body, Promotes mental relaxation, all benefits of Abhyanga and Swedana. Helpful in muscular and neural disorders, Arthritis, Degenerative problems, Paralysis and general weakness. </p>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card leftSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma4} />
                                     </div>
                                 </div>
@@ -161,7 +163,7 @@ const Panchkarma = () => {
                         <section class="skypeCard">
                             <div class="align-items-center row">
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card rightSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma5} />
                                     </div>
                                 </div>
@@ -186,7 +188,7 @@ const Panchkarma = () => {
                                     <p> Benefits: Cleanses up to deepest layers, and normalizes inflammation and swelling. Helpful in Stiffness and pain in muscles & joints, Spondylitis, Slipped disc, Neuritis. </p>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card leftSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma6} />
                                     </div>
                                 </div>
@@ -195,7 +197,7 @@ const Panchkarma = () => {
                         <section class="skypeCard">
                             <div class="align-items-center row">
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card rightSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma7} />
                                     </div>
                                 </div>
@@ -205,7 +207,7 @@ const Panchkarma = () => {
                                         <h3><strong> Nasya </strong></h3>
                                     </section>
                                     <p> A complete traditional Nasya involves the administration of medicated oil through the nose which is preceded by head and face massage and herbal steam inhalation. </p>
-                                    <p> Benefits: It cleanses accumulated toxins from the sinuses, head and neck region. Detoxifies and rejuvenate nasal mucosa giving a glowing & healthy look to the face. Helpful in Nasal Allergies, Rhinitis, Sinusitis, Nasal Polyps, Stiffness of the neck, Neurological dysfunctions, Eye problems and Migraines. </p> 
+                                    <p> Benefits: It cleanses accumulated toxins from the sinuses, head and neck region. Detoxifies and rejuvenate nasal mucosa giving a glowing & healthy look to the face. Helpful in Nasal Allergies, Rhinitis, Sinusitis, Nasal Polyps, Stiffness of the neck, Neurological dysfunctions, Eye problems and Migraines. </p>
                                 </div>
                             </div>
                         </section>
@@ -219,7 +221,7 @@ const Panchkarma = () => {
                                     <p> Marmas are vital points mentioned in Ayurveda that represent the centres of Vital Energies and occupy a prominent place from the structural, functional and psychological points of view. Marma massage stimulates these points and corrects the flow of energy through these points. </p>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card leftSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma8} />
                                     </div>
                                 </div>
@@ -228,7 +230,7 @@ const Panchkarma = () => {
                         <section class="skypeCard">
                             <div class="align-items-center row">
                                 <div class="col-md-4">
-                                    <div class="about_pics shine-card rightSidePic">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma9} />
                                     </div>
                                 </div>
@@ -238,7 +240,7 @@ const Panchkarma = () => {
                                         <h3><strong> Udvartana </strong></h3>
                                     </section>
                                     <p> Udvartana is a deeply penetrating herbal paste lymphatic massage. This full-body massage uses a paste prepared from ground grains to cleanse the skin, improve circulation, and help weight loss. It is particularly good for skin care as its powerful exfoliating effect magically conditions the skin. It is almost similar to Abhyanga but more invigorating. Also, it uses herbal paste instead of oil. The paste is made with various organic grains, flours, herbs and oils and applied with upward strokes during the massage. Udvartana massage is particularly used for people having Kapha dosha. </p>
-                                    <p> Udvartana helps to eliminate lymphatic toxins from the body and also improves sluggish circulation and digestion. It balances Kapha dosha and cleans the skin. It increases the metabolic rate of the body and activates the rasa Dhatu (Lymph), which in turn enables the Vayus (Gases) to flow and make the nadi system more efficient. </p> 
+                                    <p> Udvartana helps to eliminate lymphatic toxins from the body and also improves sluggish circulation and digestion. It balances Kapha dosha and cleans the skin. It increases the metabolic rate of the body and activates the rasa Dhatu (Lymph), which in turn enables the Vayus (Gases) to flow and make the nadi system more efficient. </p>
                                 </div>
                             </div>
                         </section>
@@ -250,15 +252,28 @@ const Panchkarma = () => {
                                         <h3><strong> Netra Tarpan </strong></h3>
                                     </section>
                                     <p> Netra Tarpan is a cleansing and rejuvenating treatment for the eyes. Netra is a Sanskrit word for Eye and Tarpan or Poring of Oil means bathing or pooling eyes with medicated Oil or ghreet. A reservoir is built around the eyes with a kneaded Black gram split flour to retain the medicated Oil/Ghee. It relieves tired, achy and sore eyes and improves vision. It is an ideal treatment for people who use computers, drive long distances, operate machines and who keep long hours. </p>
-                                    <p>First, a Marma (vital) point face massage is provided. Next, sterilized, warmed ghee is gently poured on the eyes while the client is led through relaxing, simple eye exercises. In addition to aiding the conditions above, this treatment aids in the gradual improvement of eye conditions and has the added benefit of improving mental clarity. </p> 
+                                    <p>First, a Marma (vital) point face massage is provided. Next, sterilized, warmed ghee is gently poured on the eyes while the client is led through relaxing, simple eye exercises. In addition to aiding the conditions above, this treatment aids in the gradual improvement of eye conditions and has the added benefit of improving mental clarity. </p>
                                 </div>
-                                <div class="col-md-4"> 
-                                    <div class="about_pics shine-card leftSidePic">
+                                <div class="col-md-4">
+                                    <div class="about_pics shine-card ">
                                         <img src={Panchkarma10} />
-                                    </div> 
+                                    </div>
                                 </div>
                             </div>
                         </section>
+
+                    </Container>
+                </div>
+
+                <div className='testimonials_sec'>
+                    <Container>
+                        <section className="page_heading centerText">
+                            <h6>  What our clints are saying </h6>
+                            <h3> <span> <strong> Client Review </strong> </span> </h3>
+                        </section>
+
+                        {/* Services Section */}
+                        <ClientReviews />
 
                     </Container>
                 </div>

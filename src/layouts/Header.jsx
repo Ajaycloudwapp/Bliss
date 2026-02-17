@@ -133,7 +133,7 @@ const Header = () => {
                                                     <span> Panchkarma & Naturopathy </span>
                                                 </h6>
                                                 <section className="wrapdata">
-                                                    <a href="#">Bliss Ayurveda Health Village</a>
+                                                    <Link to="/health-village">Bliss Ayurveda Health Village</Link>
                                                     <a href="#">Our Facilities</a>
                                                     <Link to="/panchkarma">Panchkarma</Link>
                                                     <Link to="/wellness-programs">Wellness Programs</Link> 
