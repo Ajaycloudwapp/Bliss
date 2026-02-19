@@ -30,6 +30,8 @@ import { IoCall, IoHomeSharp } from 'react-icons/io5';
 import { HiOfficeBuilding } from 'react-icons/hi';
 import { ImFacebook2 } from 'react-icons/im';
 import { FaSquareTwitter } from 'react-icons/fa6';
+import PageBanner from '../component/PageBanner';
+import AboutBanner from "/image/courses/course_7.jpg";
 
 const OrderProducts = () => {
     return (
@@ -37,9 +39,9 @@ const OrderProducts = () => {
 
             <main className='order_products'>
 
-                {/* <PageBanner
+                <PageBanner
                     bgImage={AboutBanner}
-                /> */}
+                />
 
                 <div className='aboutus_sec whiteBG'>
                     {/* About Section css */}

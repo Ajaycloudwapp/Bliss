@@ -1,7 +1,7 @@
 
 import React from 'react'
 import PageBanner from '../component/PageBanner'
-import AboutBanner from "/image/videoBG.png";
+import AboutBanner from "/image/courses/course_7.jpg";
 import { Col, Container, Row } from 'react-bootstrap';
 import DiseaseManagement from '../component/videos/DiseaseManagement';
 import MenufacturingQuality from '../component/videos/MenufacturingQuality';

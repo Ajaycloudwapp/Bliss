@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import PageBanner from '../component/PageBanner'
-import AboutBanner from "/image/skype.avif";
+import AboutBanner from "/image/courses/course_7.jpg";
 import { Col, Container, Row } from 'react-bootstrap';
 
 import Herbs1 from '/image/herbs_1.avif'

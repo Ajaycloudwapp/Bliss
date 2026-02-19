@@ -134,14 +134,14 @@ const Header = () => {
                                                 </h6>
                                                 <section className="wrapdata">
                                                     <Link to="/health-village">Bliss Ayurveda Health Village</Link>
-                                                    <a href="#">Our Facilities</a>
+                                                    <Link to="/our-facilities">Our Facilities</Link>
                                                     <Link to="/panchkarma">Panchkarma</Link>
                                                     <Link to="/wellness-programs">Wellness Programs</Link> 
                                                     <Link to="/laser-treatments">Skin SPA Treatments</Link>
                                                     <Link to="/yoga-classes">Yoga Classes</Link>
                                                     <Link to="/physiotherapy">Physiotherapy</Link>
                                                     <Link to="/residence-tariff">In-Residence Tariff</Link>
-                                                    <a href="#">Ayurveda Wellness Retreat</a>
+                                                    <Link to="/wellness-retreat">Ayurveda Wellness Retreat</Link>
                                                 </section>
                                             </div>
                                         </div>

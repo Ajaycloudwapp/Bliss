@@ -1,7 +1,7 @@
 
 import React from 'react'
 import PageBanner from '../component/PageBanner'
-import AboutBanner from "/image/skype.avif";
+import AboutBanner from "/image/courses/course_7.jpg";
 import { Col, Container, Row, Table } from 'react-bootstrap';
 import AboutPics from '/image/userSkype.jpg'
 

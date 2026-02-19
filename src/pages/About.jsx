@@ -44,7 +44,7 @@ const homeServices = [
     },
 ];
 
-import AboutBanner from "/image/banner1.avif";
+import AboutBanner from "/image/courses/course_7.jpg";
 import PageBanner from '../component/PageBanner';
 import ExpertSection from '../component/ExpertSection';
 

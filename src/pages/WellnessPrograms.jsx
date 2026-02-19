@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import PageBanner from '../component/PageBanner'
-import AboutBanner from "/image/yogaBG.jpg";
+import AboutBanner from "/image/courses/course_7.jpg";
 import { Col, Container, Row } from 'react-bootstrap';
 
 import Manage1 from "/image/manage_1.avif"  

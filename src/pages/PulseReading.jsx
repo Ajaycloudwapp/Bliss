@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import AboutBanner from "/image/bgREading.avif";
+import AboutBanner from "/image/courses/course_7.jpg";
 import PageBanner from '../component/PageBanner';
 import { Col, Container, Row } from 'react-bootstrap';
  
@@ -46,8 +46,6 @@ const PulseReading = () => {
 
                                         <img src={PitaKapha} className='vataPics' alt="" />
 
-                                        <p> In Ayurveda, the concept of “Prakriti – प्रकृति ” refers to an individual’s unique constitution or inherent nature. It is determined by the balance of the three doshas: Vata, Pitta, and Kapha, which are the three fundamental energies or bio-energies in the body.  </p>
-
                                     </Col>
                                 </Row>
                             </section>
@@ -61,6 +59,9 @@ const PulseReading = () => {
                 <div className='aboutus_sec'>
                     <Container >
                         <div className='aboutus_inside'>
+                            
+                            <p> In Ayurveda, the concept of “Prakriti – प्रकृति ” refers to an individual’s unique constitution or inherent nature. It is determined by the balance of the three doshas: Vata, Pitta, and Kapha, which are the three fundamental energies or bio-energies in the body.  </p>
+
                             <section class="page_heading">
                                 <h6>Assess the “Prakriti” through “Nadi Pariksha” or pulse diagnosis</h6>
                                 <h3 className='textHindi'><strong> “नाड़ी परिक्षण द्वारा प्रकृति परिक्षण” </strong></h3> 

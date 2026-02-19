@@ -13,6 +13,11 @@ import Client1 from "/image/client_1.jpg"
 import Client2 from "/image/client_2.jpg"
 import Client3 from "/image/client_3.jpg"
 
+import Testimon1 from '/image/testimonials/testimonial_7.jpg';
+import Testimon2 from '/image/testimonials/testimonial_3.jpg';
+import Testimon3 from '/image/testimonials/testimonial_2.jpg';
+import Testimon4 from '/image/testimonials/testimonial_1.jpg';
+
 import Team1 from "/image/team/team_1.jpg"
 import Team2 from "/image/team/team_2.jpg"
 import Team3 from "/image/team/team_3.jpg"
@@ -44,6 +49,37 @@ const ClientTestimonial = ({ page }) => {
             text: "I am very grateful to everybody. Thank you all from the deepest heart. The treatments were really great. My special thanks to the technicians who work from heart. I had a very good room and wonderful food.",
             name: "Dr. Martina Hoisl",
             designation: "Medical Doctor and Psychiatrist, Zurich, Switzerland",
+        },
+    ];
+
+    const villageTestimonials = [
+        {
+            id: 1,
+            image: Testimon1,
+            text: "The Panchkarma treatments were wonderful and Ayurveda herbs are really effective. I have been using them since several years. Thank you for the help and stay here. It was a very nice and impressive time.",
+            name: "Dr. Robby Schlund",
+            designation: "Medical Doctor & Member of Parliament, Germany, Berlin, Germany",
+        },
+        {
+            id: 2,
+            image: Testimon2,
+            text: "As always we were surrounded by love and care both during Panchkarma treatments and delicious Ayurveda food. Thanks cordially Dr. Nitin and Bliss Ayurveda Team.",
+            name: "Dr. Issa Salomi",
+            designation: "Medical Doctor and Celebrity Speaker, Bagdad, Iraq",
+        },
+        {
+            id: 3,
+            image: Testimon3,
+            text: "I am very grateful to everybody. Thank you all from the deepest heart. The treatments were really great. My special thanks to the technicians who work from heart. I had a very good room and wonderful food.",
+            name: "Dr. Martina Hoisl",
+            designation: "Medical Doctor and Psychiatrist, Zurich, Switzerland",
+        },
+        {
+            id: 4,
+            image: Testimon4,
+            text: "An amazing clinic and outstanding facilities. Therefore, I visit Bliss Ayurveda Health Village every year for minimum 2 weeks. Thank you for everything.",
+            name: "Dr. Stephania Lorenz",
+            designation: "Ophthalmologist and Ayurveda Practitioner, Ingolstadt, Germany",
         },
     ];
 
@@ -92,12 +128,20 @@ const ClientTestimonial = ({ page }) => {
         },
     ];
 
-    const testimonials = page === "home" ? homeTestimonials : teamTestimonials;
+    const testimonialData = {
+        home: homeTestimonials,
+        about: teamTestimonials,
+        village: villageTestimonials
+    };
+
+    const testimonials = testimonialData[page] || homeTestimonials;
+
+    // const testimonials = page === "home" ? homeTestimonials : teamTestimonials;
 
     return (
         <div className='testimonial_inside'>
             <Row className="justify-content-center">
-                <Col md={10}>
+                <Col md={12}>
                     <Swiper
                         className="mySwiper"
                         modules={[Pagination, Autoplay]}

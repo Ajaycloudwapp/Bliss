@@ -2,7 +2,7 @@
 import React from 'react'
 
 import PageBanner from '../component/PageBanner'
-import AboutBanner from "/image/contact.jpg";
+import AboutBanner from "/image/courses/course_7.jpg";
 import ContactForm from '../component/ContactForm';
 
 import { Container } from 'react-bootstrap';

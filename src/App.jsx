@@ -36,6 +36,8 @@ import LaserTreatments from './pages/LaserTreatments';
 import WellnessPrograms from './pages/WellnessPrograms';
 import Panchkarma from './pages/Panchkarma';
 import HealthVillage from './pages/HealthVillage';
+import OurFacilities from './pages/OurFacilities';
+import WellnessRetreat from './pages/WellnessRetreat';
 
 
 
@@ -66,13 +68,15 @@ function App() {
                     <Route path='/blogs' element={<Blogs />} />
                     
                     <Route path='/health-village' element={<HealthVillage />} />
+                    <Route path='/our-facilities' element={<OurFacilities />} />
                     <Route path='/panchkarma' element={<Panchkarma />} />
                     <Route path='/wellness-programs' element={<WellnessPrograms />} />
-                    <Route path='/laser-treatments' element={<LaserTreatments />} />
+                    <Route path='/laser-treatments' element={<LaserTreatments />} /> 
                     <Route path='/yoga-classes' element={<YogaClasses />} />
                     <Route path='/physiotherapy' element={<Physiotherapy />} />
                     <Route path='/residence-tariff' element={<ResidenceTariff />} />
-                    <Route path='/book-appointment' element={<BookAppointment />} />
+                    <Route path='/book-appointment' element={<BookAppointment />} /> 
+                    <Route path='/wellness-retreat' element={<WellnessRetreat />} />
 
                     <Route path='/ayurveda-courses' element={<AyurvedaCourses />} />
                     <Route path='/basic-ayurveda' element={<BasicofAyurveda />} />
@@ -81,7 +85,6 @@ function App() {
                     <Route path="/glossary-detail/:id" element={<GlossaryDetail />} />
                 </Routes>
  
-
                 <Footer />
             </Router>
         </>
