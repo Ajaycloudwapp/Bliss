@@ -2615,6 +2615,73 @@ main{
     padding: 0px 40px;
 } 
 
+.ourfacility_sec{
+    width: 100%;
+    background-color: #fff;
+    padding: 70px 0px;
+}
+
+.ourfacility_sec .page_heading h3 {
+    font-size: 30px;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.ourfacility_sec p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.ourfacility_sec .page_heading strong {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 27px;
+} 
+
+.ourfacility_sec .skypeCard .page_heading strong:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #01458e;
+    width: 100px;
+} 
+
+.ourfacility_sec .skypeCard .about_pics img{
+    height: 350px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1201px) and (max-width: 1500px) {

@@ -19,6 +19,7 @@ import Facility7 from '/image/facility/facility_7.jpg'
 import Facility8 from '/image/facility/facility_8.jpg'
 import Facility9 from '/image/facility/facility_9.jpg'
 import Facility10 from '/image/facility/facility_10.jpg'
+import Facility11 from '/image/facility/facility_11.jpg'
 
 const courses = [
     { image: Facility1 },
@@ -32,6 +33,8 @@ const courses = [
     { image: Facility9 },
     { image: Facility10 },
 ];
+
+import Manage2 from "/image/manage_2.avif"
 
 const OurFacilities = () => {
     return (
@@ -74,7 +77,7 @@ const OurFacilities = () => {
                                     </div>
                                 </Col>
                                 <Col md={6}>
-                                    <section class="page_heading">
+                                    <section className="page_heading">
                                         <h6>WE ARE OFFERING THE FOLLOWING FACILITIES AT BLISS AYURVEDA HEALTH VILLAGE</h6>
                                         <h3>
                                             <strong> Very well equipped centrally air-conditioned clinic with very nice & pleasant ambience. </strong>
@@ -87,57 +90,166 @@ const OurFacilities = () => {
                     </Container>
                 </div>
 
-                <div className='ourExpertise_sec'>
+                <div className="ourExpertise_sec">
                     <Container>
-                        
-                        <section class="skypeCard">
-                            <div class="align-items-center row">
-                                <div class="col-md-8">
-                                    <section class="page_heading">
-                                        <h6> 12 IN-RESIDENCE GUEST ROOMS </h6>
-                                        <h3><strong> 12 Twin sharing In-Residence Guest Rooms </strong></h3>
+
+                        {/* Section 1 */}
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h6>12 IN-RESIDENCE GUEST ROOMS</h6>
+                                        <h3>
+                                            <strong>12 Twin Sharing In-Residence Guest Rooms</strong>
+                                        </h3>
                                     </section>
-                                    <p> We have 12 Twin sharing in-residence Guest Rooms. All Guest rooms have attached Bathrooms and Private balconies. All rooms are equipped with an air conditioning system and they are connected to a high-speed internet facility. Guest Rooms are fully supplied with all basic amenities like Towels, Bath towels, Slippers, Shampoo, Conditioner, Body Soap, Shower gel etc. </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="about_pics shine-card">
-                                        <img src={Facility1} />
+                                    <p>
+                                        We have 12 Twin sharing in-residence Guest Rooms. All Guest rooms
+                                        have attached Bathrooms and Private balconies. All rooms are
+                                        equipped with an air conditioning system and they are connected to
+                                        a high-speed internet facility. Guest Rooms are fully supplied with
+                                        all basic amenities like Towels, Bath towels, Slippers, Shampoo,
+                                        Conditioner, Body Soap, Shower gel etc.
+                                    </p>
+                                </Col>
+
+                                <Col md={4}>
+                                    <div className="about_pics shine-card">
+                                        <img src={Facility1} alt="Guest Rooms" className="img-fluid" />
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </section>
 
-                        <section class="skypeCard">
-                            <div class="align-items-center row">
-                                <div class="col-md-4">
-                                    <div class="about_pics shine-card">
-                                        <img src={Facility3} />
+                        {/* Section 2 */}
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={4}>
+                                    <div className="about_pics shine-card">
+                                        <img src={Facility3} alt="Panchkarma Rooms" className="img-fluid" />
                                     </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <section class="page_heading">
-                                        <h6> 8 PANCHKARMA TREATMENT ROOMS </h6>
-                                        <h3><strong> Equipped with Traditional and Modern Panchkarma Equipment </strong></h3>
+                                </Col>
+
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h6>8 PANCHKARMA TREATMENT ROOMS</h6>
+                                        <h3>
+                                            <strong>
+                                                Equipped with Traditional and Modern Panchkarma Equipment
+                                            </strong>
+                                        </h3>
                                     </section>
-                                    <p> We have 8 Panchkarma treatment rooms that are equipped with Natural Wood Traditional Massage tables, Wooden Shirodhara tables, Herbalized Steam systems and beautiful bowls and Aroma Pots filled with Herbal Aromatic Oils. Each treatment room is attached to modern shower and toilet facilities. </p>
-                                </div>
-                            </div>
+                                    <p>
+                                        We have 8 Panchkarma treatment rooms that are equipped with Natural
+                                        Wood Traditional Massage tables, Wooden Shirodhara tables,
+                                        Herbalized Steam systems and beautiful bowls and Aroma Pots filled
+                                        with Herbal Aromatic Oils. Each treatment room is attached to
+                                        modern shower and toilet facilities.
+                                    </p>
+                                </Col>
+                            </Row>
                         </section>
-                        <section class="skypeCard">
-                            <div class="align-items-center row">
-                                <div class="col-md-8">
-                                    <section class="page_heading">
-                                        <h6> AYURVEDA CAFÉ & TERRACE GARDEN </h6>
-                                        <h3><strong> Delicious & Organic Ayurveda Meals with Herbal Drinks/Tea </strong></h3>
+
+                        {/* Section 3 */}
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h6>AYURVEDA CAFÉ & TERRACE GARDEN</h6>
+                                        <h3>
+                                            <strong>
+                                                Delicious & Organic Ayurveda Meals with Herbal Drinks/Tea
+                                            </strong>
+                                        </h3>
                                     </section>
-                                    <p> We have a Beautiful Ayurveda Café where Fresh & Delicious Ayurveda Meals and Healthy Snacks are served. This cafe opens up to a beautiful Rooftop Terrace Garden where you can enrich the experience of Delicious Food, Fresh Air and Nice Surroundings. Moreover, intake of fresh air helps digestion too. </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="about_pics shine-card">
+                                    <p>
+                                        We have a Beautiful Ayurveda Café where Fresh & Delicious Ayurveda
+                                        Meals and Healthy Snacks are served. This cafe opens up to a
+                                        beautiful Rooftop Terrace Garden where you can enrich the
+                                        experience of Delicious Food, Fresh Air and Nice Surroundings.
+                                        Moreover, intake of fresh air helps digestion too.
+                                    </p>
+                                </Col>
+
+                                <Col md={4}>
+                                    <div className="about_pics shine-card">
+                                        <img src={Facility4} alt="Ayurveda Cafe" className="img-fluid" />
+                                    </div>
+                                </Col>
+                            </Row>
+                        </section>
+
+                    </Container>
+                </div>
+
+                <div className='ourfacility_sec'>
+                    <Container>
+                        <section className="page_heading centerText">
+                            <h6>  Beautiful Places of Ayurveda Services </h6>
+                            <h3> <span> <strong> Top Facilities Service </strong> </span> </h3>
+                        </section>
+
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={4}>
+                                    <div className="about_pics shine-card leftSidePic">
+                                        <img src={Facility10} />
+                                    </div>
+                                </Col> 
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h3><strong> RECREATIONAL AREA </strong></h3>
+                                    </section>
+                                    <p> We have a large recreational area on the rooftop of the building where you can spend quality time in the Fresh Air Relaxing and Readings books in our Library. Here 50-60 people can do Yoga together and evening Cultural Programs are organised. </p>
+                                </Col>
+                            </Row>
+                        </section>
+
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h3><strong> CONFERENCE CUM LECTURE HALLS </strong></h3>
+                                    </section>
+                                    <p> We have two conference cum lecture halls with a seating capacity of 25 people and 50 people respectively for Ayurveda Courses, Lectures and Seminars. </p>
+                                </Col>
+                                <Col md={4}>
+                                    <div className="about_pics shine-card rightSidePic">
+                                        <img src={Facility9} />
+                                    </div>
+                                </Col>
+                            </Row>
+                        </section>
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={4}>
+                                    <div className="about_pics shine-card leftSidePic">
                                         <img src={Facility4} />
                                     </div>
-                                </div>
-                            </div>
+                                </Col> 
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h3><strong> YOGA STUDIO </strong></h3>
+                                    </section>
+                                    <p> We have a Yoga Studio where Yoga and Meditation classes for In-residence as well as out patient individuals are organized. </p>
+                                </Col>
+                            </Row>
+                        </section>
+
+                        <section className="skypeCard">
+                            <Row className="align-items-center">
+                                <Col md={8}>
+                                    <section className="page_heading">
+                                        <h3><strong> MEDICAL JYOTISH & YAGYA </strong></h3>
+                                    </section>
+                                    <p> We do arrange Medical Jyotish Consultation and Yagyas on demand in our facility as part of Mind, Body & Conciseness Program. </p>
+                                </Col>
+                                <Col md={4}>
+                                    <div className="about_pics shine-card rightSidePic">
+                                        <img src={Facility11} />
+                                    </div>
+                                </Col>
+                            </Row>
                         </section>
 
                     </Container>
